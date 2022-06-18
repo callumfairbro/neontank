@@ -95,7 +95,7 @@
 }
 .main-content__section,
 .sidebar__section {
-  padding: 140px 0 130px;
+  padding: 75px 0 75px;
 }
 @media (max-width: 991px) {
   .sidebar__section {
