@@ -1,5 +1,10 @@
 <IfModule mod_rewrite.c>
-RewriteEngine on
+<!-- RewriteEngine on
 # Redirect to the subdirectory because that's where Drupal is installed
-RewriteRule (.*) web/$1 [L]
+RewriteRule (.*) web/$1 [L] -->
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/web
+RewriteRule ^(.*)$ /web/
+
 </IfModule>
