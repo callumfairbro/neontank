@@ -705,6 +705,12 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * example.org, with all subdomains included.
  */
 
+$settings['trusted_host_patterns'] = array(
+  '^my-domain\.co.uk$',
+  '^my-domain\.co.uk\.web$',
+  '^.+\.my-domain\.co.uk$',
+  '^.+\.my-domain\.co.uk\.web$');
+
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *
@@ -784,4 +790,10 @@ $settings['config_sync_directory'] = 'sites/default/files/config_uQbFabco6eMiy7C
 
 if ( isset($GLOBALS['request']) && '/neontank/web/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME') ) {
     $GLOBALS['request']->server->set('SCRIPT_NAME', '/index.php');
+}
+
+// Automatically generated include for settings managed by ddev.
+$ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
+if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
+  require $ddev_settings;
 }
