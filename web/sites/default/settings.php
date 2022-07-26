@@ -706,10 +706,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  */
 
 $settings['trusted_host_patterns'] = array(
-  '^my-domain\.co.uk$',
-  '^my-domain\.co.uk\.web$',
-  '^.+\.my-domain\.co.uk$',
-  '^.+\.my-domain\.co.uk\.web$');
+  '^neontank\.co.uk$',
+  '^neontank\.co.uk\.web$',
+  '^.+\.neontank\.co.uk$',
+  '^.+\.neontank\.co.uk\.web$');
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
