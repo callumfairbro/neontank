@@ -791,11 +791,11 @@ $databases['default']['default'] = array (
 $settings['config_sync_directory'] = 'sites/default/files/config_uQbFabco6eMiy7CyJPprpph5UUKTw4LoG-2uM40MCI1birxxVkjMw_bPbltp8-CtBJnKfdP7Kw/sync';
 
 
-if ( isset($GLOBALS['request']) && '/neontank/web/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME') ) {
-    $GLOBALS['request']->server->set('SCRIPT_NAME', '/index.php');
-}
+// if ( isset($GLOBALS['request']) && '/neontank/web/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME') ) {
+//     $GLOBALS['request']->server->set('SCRIPT_NAME', '/index.php');
+// }
 
-if (isset($GLOBALS['request']) and '/subdirectory/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME')) {
+if (isset($GLOBALS['request']) and '/web/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME')) {
 $GLOBALS['request']->server->set('SCRIPT_NAME', '/index.php');
 }
 
